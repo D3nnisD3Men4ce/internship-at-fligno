@@ -1,16 +1,19 @@
 import React from 'react';
 import ApexCharts from 'apexcharts'
 import ReactApexChart from "react-apexcharts";
-import data from './Test';
+import dataset from './Test';
+
 
 
   class Graph extends React.Component {
+
+
     constructor(props) {
       super(props);
 
       this.state = {
       
-        series: [{ data: data }],
+        series: [{ data: dataset }],
         options: {
           chart: {
             id: 'area-datetime',
@@ -136,7 +139,7 @@ import data from './Test';
     render() {
   
       return (
-
+        
 <div>
     <div className="toolbar">
         <button id="one_month"
@@ -173,7 +176,7 @@ import data from './Test';
         </button>
 
     </div>
-
+       
         <div id="chart-timeline">
           <ReactApexChart options={this.state.options} series={this.state.series} type="area" height={250} />
         </div>

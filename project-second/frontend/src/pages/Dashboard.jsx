@@ -17,7 +17,7 @@ function Dashboard() {
       </section>
 
       <AllCharts />
-      <SimulateData />
+      {/* <SimulateData /> */}
 
     </>
   )
