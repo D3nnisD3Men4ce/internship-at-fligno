@@ -30,7 +30,6 @@ function Register() {
 
   useEffect(() => {
 
-
     if (isError) {
       toast.error(message)
     }
@@ -51,7 +50,6 @@ function Register() {
       [e.target.name] : e.target.value
     }))
   }
-
   
   const handleSubmit = (event) => {
     event.preventDefault()
